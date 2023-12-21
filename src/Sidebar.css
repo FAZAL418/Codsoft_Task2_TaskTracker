@@ -1,0 +1,44 @@
+/* Sidebar.css */
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 200px;
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: width 0.3s ease, box-shadow 0.3s ease; /* Add transition for width and box-shadow */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add box-shadow for a subtle effect */
+  }
+  
+  .sidebar.visible {
+    width: 250px;
+    box-shadow: 5px 0 15px rgba(0, 0, 0, 0.3); /* Adjusted box-shadow on expansion */
+  }
+  
+  .sidebar-content {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .sidebar h2 {
+    font-size: 24px;
+    margin: 0;
+    font-weight: bold;
+    font-family: 'Merriweather', serif; /* Use the Merriweather font for a classic feel */
+  }
+  
+  .sidebar-date {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #a4acc4; /* Adjusted date color for better visibility */
+  }
+  
+  .sidebar:hover {
+    box-shadow: 5px 0 15px rgba(0, 0, 0, 0.3); /* Adjusted box-shadow on hover */
+  }
+  
