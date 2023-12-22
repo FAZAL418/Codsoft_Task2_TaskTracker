@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Codsoft_Task2_TaskTracker/static/css/main.63b88e11.css",
+    "main.js": "/Codsoft_Task2_TaskTracker/static/js/main.d34a3e07.js",
+    "static/js/787.f6173c5c.chunk.js": "/Codsoft_Task2_TaskTracker/static/js/787.f6173c5c.chunk.js",
+    "index.html": "/Codsoft_Task2_TaskTracker/index.html",
+    "main.63b88e11.css.map": "/Codsoft_Task2_TaskTracker/static/css/main.63b88e11.css.map",
+    "main.d34a3e07.js.map": "/Codsoft_Task2_TaskTracker/static/js/main.d34a3e07.js.map",
+    "787.f6173c5c.chunk.js.map": "/Codsoft_Task2_TaskTracker/static/js/787.f6173c5c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.63b88e11.css",
+    "static/js/main.d34a3e07.js"
+  ]
+}
