@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import './TaskForm.css';
 
@@ -31,6 +30,13 @@ const TaskForm = () => {
     }
   };
 
+  const updateTask = (index, newDescription) => {
+    const updatedTasks = [...tasks];
+    updatedTasks[index].description = newDescription;
+    setTasks(updatedTasks);
+    localStorage.setItem('tasks', JSON.stringify(updatedTasks));
+  };
+
   const deleteTask = (index) => {
     const updatedTasks = [...tasks];
     updatedTasks.splice(index, 1);
@@ -60,8 +66,20 @@ const TaskForm = () => {
         <h2 className="task-list-title">TASK LIST</h2>
         {tasks.map((task, index) => (
           <div className="task-box" key={index}>
-            <p className="task-description">{task.description} - {task.daysRemaining} days remaining</p>
-            <button className="delete-button" onClick={() => deleteTask(index)}>Delete</button>
+            <p className="task-description">
+              {task.description} - {task.daysRemaining} days remaining
+            </p>
+            <button className="delete-button" onClick={() => deleteTask(index)}>
+              Delete
+            </button>
+            <button onClick={() => {
+              const newDescription = prompt("Enter the new task description:", task.description);
+              if (newDescription !== null) {
+                updateTask(index, newDescription);
+              }
+            }}>
+              Update
+            </button>
           </div>
         ))}
       </div>
